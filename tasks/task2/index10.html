@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function extractFullName(arr) {
+  return arr.map(person => `${person.first} ${person.last}`);
+}
+
+
+const people = [
+  { first: 'Elie', last: 'Schoppik' },
+  { first: 'Tim', last: 'Garcia' },
+  { first: 'Matt', last: 'Lane' },
+  { first: 'Colt', last: 'Steele' }
+];
+
+const result = extractFullName(people);
+console.log(result); 
+
+    </script>
+</body>
+</html>

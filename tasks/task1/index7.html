@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array2 = [5, 9, -7, 3.5];
+var newLength = array2.push(10);
+console.log(array2); // [5, 9, -7, 3.5, 10]
+console.log("New length:", newLength); // 5
+
+var poppedElement = array2.pop();
+console.log(array2); // [5, 9, -7]
+console.log("Popped element:", poppedElement); // 3.5
+
+var shiftedElement = array2.shift();
+console.log(array2); // [9, -7, 3.5]
+console.log("Shifted element:", shiftedElement); // 5
+
+var newLengthAfterUnshift = array2.unshift(1, 2);
+console.log(array2); // [1, 2, 9, -7, 3.5]
+console.log("New length after unshift:", newLengthAfterUnshift); // 5
+
+    </script>
+</body>
+</html>

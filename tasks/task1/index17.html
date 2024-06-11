@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aveArrayForLoop(arr) {
+    if (arr.length === 0) {
+        return null;
+    }
+
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
+// Example usage:
+const nums = [1, 2, 3, 8, 9];
+console.log("Average using for loop:", aveArrayForLoop(nums));
+//*****************while loop************************************
+function aveArrayWhileLoop(arr) {
+    if (arr.length === 0) {
+        return null; 
+    }
+
+    let sum = 0;
+    let i = 0;
+    while (i < arr.length) {
+        sum += arr[i];
+        i++;
+    }
+    return sum / arr.length;
+}
+
+
+const nums2 = [1, 2, 3, 8, 9, 77];
+console.log("Average using while loop:", aveArrayWhileLoop(nums2));
+
+    </script>
+</body>
+</html>

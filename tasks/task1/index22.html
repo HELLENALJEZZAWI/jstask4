@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function evenNumberEvenIndexForLoop(nums) {
+    const result = [];
+    for (let i = 0; i < nums.length; i += 2) {
+        if (nums[i] % 2 === 0) {
+            result.push(nums[i]);
+        }
+    }
+    return result;
+}
+
+// Example usage:
+const nums = [5, 2, 2, 1, 8, 66, 55, 77, 34, 9, 55, 1];
+console.log("Filtered even numbers (for loop):", evenNumberEvenIndexForLoop(nums));
+
+//*******************************while loop***********************************************
+
+function evenNumberEvenIndexWhileLoop(nums) {
+    const result = [];
+    let i = 0;
+    while (i < nums.length) {
+        if (i % 2 === 0 && nums[i] % 2 === 0) {
+            result.push(nums[i]);
+        }
+        i++;
+    }
+    return result;
+}
+console.log("Filtered even numbers (while loop):", evenNumberEvenIndexWhileLoop(nums));
+
+    </script>
+</body>
+</html>

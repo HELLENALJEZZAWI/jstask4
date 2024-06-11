@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function doubleValues(arr) {
+  const doubledArray = [];
+  arr.forEach(value => {
+    doubledArray.push(value * 2);
+  });
+  return doubledArray;
+}
+
+const testArray1 = [1, 2, 3];
+const testArray2 = [5, 1, 2, 3, 10];
+
+console.log("Test Case 1:", doubleValues(testArray1)); 
+console.log("Test Case 2:", doubleValues(testArray2)); 
+ 
+    </script>
+</body>
+</html>

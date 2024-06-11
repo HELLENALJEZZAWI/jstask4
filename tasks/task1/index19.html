@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function repeatCharForLoop(str, targetChar) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === targetChar) {
+            count++;
+        }
+    }
+    return count;
+}
+
+
+const inputString = "alex mercer madrasa rashed2 emad hala";
+console.log("Occurrences of 'a' (for loop):", repeatCharForLoop(inputString, "a"));
+console.log("Occurrences of 'z' (for loop):", repeatCharForLoop(inputString, "z"));
+//***************************while loop****************************************************
+function repeatCharWhileLoop(str, targetChar) {
+    let count = 0;
+    let i = 0;
+    while (i < str.length) {
+        if (str[i] === targetChar) {
+            count++;
+        }
+        i++;
+    }
+    return count;
+}
+console.log("Occurrences of 'a' (while loop):", repeatCharWhileLoop(inputString, "a"));
+console.log("Occurrences of 'z' (while loop):", repeatCharWhileLoop(inputString, "z"));
+
+   </script> 
+</body>
+</html>

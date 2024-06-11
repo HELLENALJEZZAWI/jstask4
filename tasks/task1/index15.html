@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeFromArrayForLoop(arr, elementToRemove) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === elementToRemove) {
+            arr.splice(i, 1); 
+            break; 
+        }
+    }
+    return arr;
+}
+const nums = [1, 2, 3, 8, 9];
+console.log("Array after removal (for loop):", removeFromArrayForLoop(nums, 8));
+
+//********while loop**********
+function removeFromArrayWhileLoop(arr, elementToRemove) {
+    let i = 0;
+    while (i < arr.length) {
+        if (arr[i] === elementToRemove) {
+            arr.splice(i, 1); 
+            break; 
+        }
+        i++;
+    }
+    return arr;
+}
+
+
+console.log("Array after removal (while loop):", removeFromArrayWhileLoop(nums, 8));
+
+
+    </script>
+</body>
+</html>

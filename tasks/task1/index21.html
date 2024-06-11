@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    function powerElementIndexForLoop(nums) {
+    const result = [];
+    for (let i = 0; i < nums.length; i++) {
+        result.push(nums[i] ** i);
+    }
+    return result;
+}
+
+const nums = [44, 5, 4, 3, 2, 10];
+console.log("Powered elements (for loop):", powerElementIndexForLoop(nums));
+//***************************************while loop*******************************
+function powerElementIndexWhileLoop(nums) {
+    const result = [];
+    let i = 0;
+    while (i < nums.length) {
+        result.push(nums[i] ** i);
+        i++;
+    }
+    return result;
+}
+
+// Example usage:
+console.log("Powered elements (while loop):", powerElementIndexWhileLoop(nums));
+
+
+  </script> 
+</body>
+</html>

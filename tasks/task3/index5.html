@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function vowelCount(str) {
+    const vowels = 'aeiouAEIOU'; 
+    const result = {}; 
+
+   
+    for (const char of str) {
+        if (vowels.includes(char)) {
+            
+            const lowercaseChar = char.toLowerCase(); 
+            result[lowercaseChar] = (result[lowercaseChar] || 0) + 1;
+        }
+    }
+
+    return result;
+}
+
+
+console.log(vowelCount('Elie')); 
+console.log(vowelCount('Tim')); 
+console.log(vowelCount('Matt')); 
+console.log(vowelCount('hmmm')); 
+console.log(vowelCount('I Am awesome and so are you')); 
+
+    </script>
+</body>
+</html>

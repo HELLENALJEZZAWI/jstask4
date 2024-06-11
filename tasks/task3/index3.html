@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showFirstAndLast(arr) {
+    const result = [];
+    arr.forEach((str) => {
+        if (str.length >= 2) {
+            result.push(str[0] + str[str.length - 1]);
+        } else {
+           
+            result.push(str);
+        }
+    });
+    return result;
+}
+
+const testCase1 = showFirstAndLast(['colt', 'matt', 'tim', 'udemy']);
+const testCase2 = showFirstAndLast(['hi', 'goodbye', 'smile']);
+
+console.log('Test Case 1:', testCase1); 
+console.log('Test Case 2:', testCase2); 
+
+    </script>
+</body>
+</html>

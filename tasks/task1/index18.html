@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function shorterInArrayForLoop(arr) {
+    let shortest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i].length < shortest.length) {
+            shortest = arr[i]; 
+        }
+    }
+    return shortest;
+}
+
+
+const strings = ["nina", "Alec", "kity", "noor", "reme", "hala"];
+console.log("Shortest string using for loop:", shorterInArrayForLoop(strings));
+//****************************whileloop*******************************************
+function shorterInArrayWhileLoop(arr) {
+    let shortest = arr[0]; 
+    let i = 1;
+    while (i < arr.length) {
+        if (arr[i].length < shortest.length) {
+            shortest = arr[i]; 
+        }
+        i++;
+    }
+    return shortest;
+}
+
+
+console.log("Shortest string using while loop:", shorterInArrayWhileLoop(strings));
+
+    </script>
+</body>
+</html>

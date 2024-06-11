@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index of Array Element</title>
+    <script>
+        function indexOfArray(arr, index) {
+            if (index >= 0 && index < arr.length) {
+                return arr[index];
+            } else {
+                return null;
+            }
+        }
+
+
+        var myArray = ['apple', 'banana', 'cherry'];
+        var result = indexOfArray(myArray, 1); 
+        console.log("Element at index 1:", result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

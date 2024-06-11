@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCript>
+        function middleOfArray(arr) {
+    const length = arr.length;
+    if (length === 0) {
+        return null;
+    }
+
+    if (length % 2 === 1) {
+        
+        const middleIndex = Math.floor(length / 2);
+        return arr[middleIndex];
+    } else {
+       
+        const middleIndex1 = length / 2 - 1;
+        const middleIndex2 = length / 2;
+        return [arr[middleIndex1], arr[middleIndex2]];
+    }
+}
+
+
+const myArray1 = [1, 2, 3, 4, 5];
+console.log("Middle element (odd length):", middleOfArray(myArray1));
+
+const myArray2 = [10, 20, 30, 40];
+console.log("Middle elements (even length):", middleOfArray(myArray2));
+
+    </SCript>
+</body>
+</html>
